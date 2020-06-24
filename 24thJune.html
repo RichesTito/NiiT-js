@@ -19,6 +19,12 @@ function changemain(){
   c=document.getElementById('counter');
    c.innerHTML=`<h1>${count}</h1>`;
   }
+
+  function reset(){
+    count = 0;
+    c=document.getElementById('counter');
+    c.innerHTML=`<h1>${count}</h1>`;
+  }
 </script>
   </head>
   <body id="root">
@@ -27,6 +33,7 @@ function changemain(){
     <div id="counter">
     </div>
     <button type="button" name="button" onclick=changemain()>click here</button>
+    <button type="button" name="button" onclick="reset()">RESET</button>
     </div>
     </center>
   </body>
