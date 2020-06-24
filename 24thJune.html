@@ -8,13 +8,14 @@
   var c;
 
 function changemain(){
- c = document.getElementById('counter');
+ var body = document.getElementById('root');
+ body.style.color = "red";
  change();
 }
 
   function change(){
-    //c=document.getElementById('counter');
-   c.innerHTML="<h1 style='color:red'>hello</h1>";
+  c=document.getElementById('counter');
+   c.innerHTML="<h1>hello</h1>";
   }
 </script>
   </head>
